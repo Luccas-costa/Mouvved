@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'], // Adiciona a classe personalizada para a fonte
+                    },
+                    screens: {
+                        screen1500: "1500px",
+                        screen1200: "1200px",
+                        screen1000: "1000px",
+                        screen900: "900px",
+                        screen800: "800px",
+                        screen700: "700px",
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="font-montserrat bg-zinc-100/60">
+    <!-- header -->
+    <header class="h-[100px] w-full bg-white flex items-center justify-evenly screen1200:gap-[100px] gap-[1px]"
+        style=" z-index: 10;">
+        <img src="../public/logo.png" alt="logo" class="h-[80px] w-[250px] ">
+        <div class="flex items-center screen1200:gap-[100px] screen900:flex hidden gap-[50px]  font-medium ">
+            <div class="cursor-pointer hover:text-[#6f42c1]">Meu Perfil</div>
+            <div class="cursor-pointer hover:text-[#6f42c1]">Fale conosco</div>
+            <div class="cursor-pointer hover:text-[#6f42c1]">Adiquira ja</div>
+            <div class="cursor-pointer text-[#6f42c1]">Nova mudança</div>
+        </div>
+        <div class="screen900:hidden block">
+            <img src="../public/menu.svg" alt="">
+        </div>
+    </header>
+    <div class="h-[5px] w-full" style="background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%);"></div>
+
+    <!-- <div class="rotate-90 absolute top-0 left-0 translate-x-[40vw] translate-y-[509px]" style="z-index: -10;">
+        <div class="custom-shape-divider-top-1734112067">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="absolute right-0 -z-10">
+        <img src="../public/def.png" alt="">
+    </div> -->
+
+    <!-- hero -->
+    <section style="z-index: 1;" class="mt-[100px] screen1500:ml-[13vw] ml-[6vw]">
+        <div class="w-full h-[500px] flex jutify-center gap-[40px] screen1000:flex-nowrap flex-wrap">
+            <div
+                class="screen1500:max-w-[600px] max-w-[550px] text-[45px] font-montserrat screen1000:ml-[0] screen1000:translate-x-0  ml-[45vw] translate-x-[-50%] flex flex-col screen1200:gap-[50px] screen1000:gap-[70px] gap-[20px]">
+                <div class="font-bold text-[#811BB8] max-w-[450px] min-h-[250px]">
+                    Gere muito mais negócios e
+                    <span class="text-[#FE1F91] dynamic-text">engajamento</span> com a Publs!
+                </div>
+
+                <div
+                    class="screen1500:text-lg screen1200:text-base text-sm font-medium text-zinc-500 screen1200:translate-y-[0px] screen1000:translate-y-[40px] translate-y-[0px]">
+                    <div class="mb-[20px]">Dê PLAY na evolução do seu negócio com a Publs!</div>
+                    <div>Com a nossa plataforma você gera muito mais retenção e impulsiona o seu game, enquanto engaja e
+                        motiva os seus clientes!</div>
+                </div>
+                <button
+                    class=" shadow-lg transition-all duration-200 w-[350px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
+                    Agendardemonstração gratuita
+                </button>
+            </div>
+            <div class="screen1200:translate-y-[-40px] translate-y-[80px] translate-x-[-20px] screen1000:block hidden">
+                <img src="../public/caminhao-hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <!-- <section style="z-index: 1;" class="mt-[200px] mb-[100px]">
+
+        <div class="w-full flex justify-center text-zinc-400 font-medium text-xl">
+            Escolha sua mudança ideial!
+        </div>
+        <div class="flex gap-[20px] mt-[30px] justify-center w-full">
+            <div
+                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
+                <img src=" ../public/cad1.png" loading="lazy" alt="" width="275px" class="mx-auto pt-1" />
+                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
+                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Pequeno</div>
+                <div class="flex h-full items-end">
+                    <button
+                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
+                <img src=" ../public/ca4.png" loading="lazy" alt="" width="250px" class="mx-auto pt-1" />
+                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
+                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Médio</div>
+                <div class="flex h-full items-end">
+                    <button
+                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
+                <img src=" ../public/ca5.png" loading="lazy" alt="" width="173px" class="mx-auto pt-1" />
+                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
+                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Grande</div>
+                <div class="flex h-full items-end">
+                    <button
+                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
+                <img src=" ../public/ca2.png" loading="lazy" alt="" width="400px" class="mx-auto pt-3 pb-3" />
+                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
+                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Interestadual</div>
+                <div class="flex h-full items-end">
+                    <button
+                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="mt-[250px] mb-[80px] w-full flex flex-col items-center gap-[40px]" style="z-index: 1;">
+        <div class="w-full flex justify-center text-zinc-400 font-medium text-xl">
+            Escolha sua mudança ideial!
+        </div>
+        <div class="max-w-[1100px] mx-auto overflow-hidden flex justify-center">
+            <ul class="luccas">
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200""><img src="
+                    ../public/teste1.png" alt="logo" class="w-[170px]"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste2.png" alt="logo"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste3.png" alt="logo" class="w-[170px]"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste4.png" alt="logo"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste5.png" alt="logo" class="w-[170px]"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste6.png" alt="logo" class="w-[170px]"></li>
+                <!-- Conteúdo duplicado
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste1.png" alt="logo" class="w-[170px]"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste3.png" alt="logo"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste1.png" alt="logo" class="w-[170px]"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
+                        src=" ../public/teste3.png" alt="logo"></li>
+                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200""><img src="
+                    ../public/teste1.png" alt="logo" class="w-[170px]"></li>
+            </ul>
+        </div>
+    </section> -->
+
+
+    <!-- statistics  -->
+    <section style="z-index: 1;" class="mt-[200px] transition-all duration-200 bg-white"
+        style="transition: opacity 0.3s ease-in-out;">
+        <div class="w-full h-full" style="background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%) ">
+            <div
+                class="min-h-[220px] w-full flex justify-evenly  screen800:flex-nowrap flex-wrap screen700:gap-0 gap-8 screen700:py-0 py-[50px]">
+                <div class="flex flex-col items-center justify-center min-w-[300px]">
+                    <div id="numeros"
+                        class="screen1200:text-7xl screen1000:text-6xl text-5xl text-zinc-200 font-semibold">+
+                        400.000
+                    </div>
+                    <div class="text-lg font-medium text-zinc-300">Caixas plásticas alugadas</div>
+                </div>
+                <div class="flex flex-col items-center justify-center min-w-[300px] ">
+                    <div id="numeros"
+                        class=" screen1200:text-7xl screen1000:text-6xl text-5xl text-zinc-200 font-semibold">+
+                        30.000
+                    </div>
+                    <div class="text-lg font-medium text-zinc-300">Itens em guarda-móveis</div>
+                </div>
+                <div class="flex flex-col items-center justify-center min-w-[300px] ">
+                    <div id="numeros"
+                        class=" screen1200:text-7xl screen1000:text-6xl text-5xl text-zinc-200 font-semibold">+
+                        90.000
+                    </div>
+                    <div class="text-lg font-medium text-zinc-300">Transportes realizados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <!-- <section class="pb-[100px] pt-[100px] bg-white">
+        <div class=" h-full w-full" id="testimonials">
+            <div class="flex flex-col items-center gap-16">
+                <div class="flex flex-col items-center justify-center gap-2">
+                    <div class="text-4xl font-bold" style="
+                    background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent; /* Fallback para navegadores que não suportam gradientes */
+                ">
+                        Depoimentos
+                    </div>
+
+
+                    <div class="text-zinc-400 font-medium text-xl">
+                        Algumas citações de nossos clientes satisfeitos
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-10">
+                    <div
+                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
+                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
+                        <div class="my-2 flex items-center gap-1">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/starhalf.svg" alt="">
+                        </div>
+                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
+                            “I love it! No more air fresheners”
+                        </div>
+                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
+                    </div>
+                    <div
+                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
+                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
+                        <div class="my-2 flex items-center gap-1">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                        </div>
+                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
+                            "Raccomended for everyone"
+                        </div>
+                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
+                    </div>
+                    <div
+                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
+                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
+                        <div class="my-2 flex items-center gap-1">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/star.svg" alt="">
+                            <img src="../public/starhalf.svg" alt="">
+                        </div>
+                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
+                            “Looks very natural, the smell is awesome”
+                        </div>
+                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section style="z-index: 1;"></section>
+
+    <script src=" js/index.js">
+    </script>
+</body>
+
+</html>

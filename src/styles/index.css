@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+::-webkit-scrollbar {
+    width: 0.4vw;
+    background: #c6acf5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d4c5f8;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    /* user-select: none; */
+}
+
+.dynamic-text {
+    border-right: 2px solid #FE1F91;
+    animation: blink-cursor 0.7s step-end infinite;
+}
+
+.custom-shape-divider-top-1734112067 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1734112067 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 405px;
+}
+
+.custom-shape-divider-top-1734112067 .shape-fill {
+    fill: #706BAD;
+}
+
+.luccas {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    animation: slide 10s linear infinite;
+    will-change: transform;
+}
+
+.luccas:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-800px);
+    }
+}
+
+
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #FE1F91;
+    }
+}
