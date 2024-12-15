@@ -14,6 +14,7 @@
                 extend: {
                     fontFamily: {
                         montserrat: ['Montserrat', 'sans-serif'], // Adiciona a classe personalizada para a fonte
+                        anton: ['Anton', 'sans-serif'],
                     },
                     screens: {
                         screen1500: "1500px",
@@ -47,19 +48,6 @@
     </header>
     <div class="h-[5px] w-full" style="background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%);"></div>
 
-    <!-- <div class="rotate-90 absolute top-0 left-0 translate-x-[40vw] translate-y-[509px]" style="z-index: -10;">
-        <div class="custom-shape-divider-top-1734112067">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill">
-                </path>
-            </svg>
-        </div>
-    </div>
-    <div class="absolute right-0 -z-10">
-        <img src="public/def.png" alt="">
-    </div> -->
-
     <!-- hero -->
     <section style="z-index: 1;" class="screen800:mt-[100px] mt-[50px] screen1500:ml-[13vw] ml-[6vw]">
         <div class="w-full h-[500px] flex jutify-center gap-[40px] screen1000:flex-nowrap flex-wrap">
@@ -87,102 +75,64 @@
         </div>
     </section>
 
-    <!-- Cards -->
-    <!-- <section style="z-index: 1;" class="mt-[200px] mb-[100px]">
 
-        <div class="w-full flex justify-center text-zinc-400 font-medium text-xl">
-            Escolha sua mudança ideial!
-        </div>
-        <div class="flex gap-[20px] mt-[30px] justify-center w-full">
-            <div
-                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
-                <img src=" public/cad1.png" loading="lazy" alt="" width="275px" class="mx-auto pt-1" />
-                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
-                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Pequeno</div>
-                <div class="flex h-full items-end">
-                    <button
-                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
-                        Ver mais
-                    </button>
-                </div>
-            </div>
+    <section class="mt-[250px] h-full" id="sla">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <!-- Título -->
+            <h2 class="text-2xl md:text-3xl font-bold mb-8" style="
+            background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;">
+                Mais formas de se fazer uma mudança
+            </h2>
 
-            <div
-                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
-                <img src=" public/ca4.png" loading="lazy" alt="" width="250px" class="mx-auto pt-1" />
-                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
-                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Médio</div>
-                <div class="flex h-full items-end">
-                    <button
-                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
-                        Ver mais
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
-                <img src=" public/ca5.png" loading="lazy" alt="" width="173px" class="mx-auto pt-1" />
-                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
-                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Grande</div>
-                <div class="flex h-full items-end">
-                    <button
-                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
-                        Ver mais
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="w-[350px] h-[400px] bg-zinc-300/50 rounded-lg shadow-lg flex flex-col p-3 hover:scale-105 transition-all duration-200">
-                <img src=" public/ca2.png" loading="lazy" alt="" width="400px" class="mx-auto pt-3 pb-3" />
-                <div class="h-[2px] w-[94%] bg-zinc-300 mx-auto mt-1"></div>
-                <div class="text-4xl font-medium text-center text-zinc-400 pt-4">Transporte <br> Interestadual</div>
-                <div class="flex h-full items-end">
-                    <button
-                        class="shadow-lg mb-1 transition-all duration-200 w-[320px] text-[#811BB8] min-h-[60px] bg-[#811BB8]/20  hover:bg-[#811BB8] font-semibold rounded-2xl hover:text-white text-lg">
-                        Ver mais
-                    </button>
+            <!-- Swiper Container -->
+            <div class="swiper toSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-zinc-200/50  rounded-xl flex flex-col items-center">
+                            <img src="public/teste1.png" alt="" class="w-[49%]">
+                            <div class="font-anton text-zinc-500 text-3xl font-bold">Pequeno</div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-zinc-200/50  rounded-xl flex flex-col items-center">
+                            <img src="public/teste5.png" alt="" class="w-[59%]">
+                            <div class="font-anton text-zinc-500 text-3xl font-bold">Padrao</div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
+                            <img src="public/teste3.png" alt="" class="w-[40%]">
+                            <div class="font-anton text-zinc-500 text-3xl font-bold">+ Empacotador</div>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
+                            <img src="public/teste2.png" alt="" class="w-[38%]">
+                            <div class="font-anton text-zinc-500 text-3xl font-bold">+ Equipe completa</div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
+                            <img src="public/teste4.png" alt="" class="w-[79%]">
+                            <div class="font-anton text-zinc-500 text-3xl font-bold">InterEstadual</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="mt-[250px] mb-[80px] w-full flex flex-col items-center gap-[40px]" style="z-index: 1;">
-        <div class="w-full flex justify-center text-zinc-400 font-medium text-xl">
-            Escolha sua mudança ideial!
-        </div>
-        <div class="max-w-[1100px] mx-auto overflow-hidden flex justify-center">
-            <ul class="luccas">
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200""><img src="
-                    public/teste1.png" alt="logo" class="w-[170px]"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste2.png" alt="logo"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste3.png" alt="logo" class="w-[170px]"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste4.png" alt="logo"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste5.png" alt="logo" class="w-[170px]"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste6.png" alt="logo" class="w-[170px]"></li>
-                <!-- Conteúdo duplicado
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste1.png" alt="logo" class="w-[170px]"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste3.png" alt="logo"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste1.png" alt="logo" class="w-[170px]"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200"><img
-                        src=" public/teste3.png" alt="logo"></li>
-                <li class="size-[200px] flex items-center justify-center rounded-2xl bg-zinc-200""><img src="
-                    public/teste1.png" alt="logo" class="w-[170px]"></li>
-            </ul>
-        </div>
-    </section> -->
-
+    </section>
 
     <!-- statistics  -->
-    <section style="z-index: 1;" class="mt-[200px] transition-all duration-200 bg-white"
+    <section style="z-index: 1;" class="mt-[100px] transition-all duration-200 bg-white"
         style="transition: opacity 0.3s ease-in-out;">
         <div class="w-full h-full" style="background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%) ">
             <div
@@ -323,77 +273,6 @@
     </section>
 
     <!-- Testimonials -->
-    <!-- <section class=" pb-[100px] pt-[100px] bg-white">
-                        <div class=" h-full w-full" id="testimonials">
-                            <div class="flex flex-col items-center gap-16">
-                                <div class="flex flex-col items-center justify-center gap-2">
-                                    <div class="text-4xl font-bold" style="
-                    background: linear-gradient(135deg, #706bad, #706bad 50%, #f69121 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    color: transparent; /* Fallback para navegadores que não suportam gradientes */
-                ">
-                                        Depoimentos
-                                    </div>
-
-
-                                    <div class="text-zinc-400 font-medium text-xl">
-                                        Algumas citações de nossos clientes satisfeitos
-                                    </div>
-                                </div>
-                                <div class="flex flex-wrap items-center justify-center gap-10">
-                                    <div
-                                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
-                                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
-                                        <div class="my-2 flex items-center gap-1">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/starhalf.svg" alt="">
-                                        </div>
-                                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
-                                            “I love it! No more air fresheners”
-                                        </div>
-                                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
-                                    </div>
-                                    <div
-                                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
-                                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
-                                        <div class="my-2 flex items-center gap-1">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                        </div>
-                                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
-                                            "Raccomended for everyone"
-                                        </div>
-                                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
-                                    </div>
-                                    <div
-                                        class="flex h-[418px] w-[470px] flex-col items-center justify-center gap-3 rounded-lg bg-white p-2 shadow-xl">
-                                        <div class="mb-8 size-[100px] rounded-full shadow-2xl bg-[#706bad]"></div>
-                                        <div class="my-2 flex items-center gap-1">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/star.svg" alt="">
-                                            <img src="public/starhalf.svg" alt="">
-                                        </div>
-                                        <div class="max-w-[80%] text-center text-2xl font-semibold text-zinc-700">
-                                            “Looks very natural, the smell is awesome”
-                                        </div>
-                                        <div class="text-xl font-medium text-zinc-500">Eduardo</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    </section> -->
-
-
     <section class="py-12 h-full">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <!-- Título -->
@@ -411,7 +290,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -426,7 +305,7 @@
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -441,7 +320,7 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -456,7 +335,7 @@
                     </div>
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -471,7 +350,7 @@
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -486,7 +365,7 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="p-6 bg-zinc-200/50 shadow-md rounded-xl flex flex-col items-center">
+                        <div class="p-6 bg-zinc-200/50 rounded-xl flex flex-col items-center">
                             <p class="text-gray-600 text-lg italic mb-4">
                                 "Comentario plataforma da Movved!"
                             </p>
@@ -503,7 +382,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- footer -->
     <footer class="bg-gray-50 text-gray-500 py-8">
