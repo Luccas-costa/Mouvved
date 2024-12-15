@@ -19,6 +19,10 @@ body {
     /* user-select: none; */
 }
 
+#vai {
+    overflow-x: hidden !important;
+}
+
 .dynamic-text {
     border-right: 2px solid #FE1F91;
     animation: blink-cursor 0.7s step-end infinite;
