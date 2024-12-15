@@ -55,3 +55,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // Responsividade
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
